@@ -12,7 +12,7 @@ function App() {
         <div className="container mt-5">
           <header className="text-center mb-5">
             <h1 className="display-4 text-primary">📝 Gestor de Publicaciones</h1>
-            <p className="lead text-muted">
+            <p className="lead text-secondary">
               Aplicación React CRUD con JSONPlaceholder API
             </p>
             <div className="badge bg-info fs-6">

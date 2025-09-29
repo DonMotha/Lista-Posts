@@ -31,7 +31,7 @@ function PostsList() {
                 if (!response.ok) throw new Error('Error al cargar publicaciones');
 
                 const data = await response.json();
-                setPosts(data.slice(0, 6)); // Limitamos a 10
+                setPosts(data.slice(0, 10)); // Limitamos a 10
                 setError(null);
             } catch (err) {
                 setError(err.message);
