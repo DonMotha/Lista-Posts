@@ -1,0 +1,145 @@
+/* 🎨 Paleta de Colores */
+:root {
+  --color-dark: #021024;   /* Azul muy oscuro */
+  --color-navy: #052659;   /* Azul marino */
+  --color-steel: #5483B3;  /* Azul petróleo */
+  --color-sky: #7DA0CA;    /* Azul cielo apagado */
+  --color-light: #C1E8FF;  /* Celeste suave */
+}
+
+/* Estilos generales */
+.App {
+  min-height: 100vh;
+  background: linear-gradient(135deg, var(--color-dark) 0%, var(--color-navy) 100%);
+  padding-bottom: 2rem;
+  color: var(--color-dark);
+}
+
+.container {
+  max-width: 1200px;
+}
+
+/* Header styles */
+header h1 {
+  font-weight: 700;
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.3);
+  color: var(--color-light) !important;
+}
+
+header p {
+  color: var(--color-sky) !important;
+  font-size: 1.1rem;
+}
+
+/* Card styles */
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: none;
+  border-radius: 15px;
+  overflow: hidden;
+  background-color: var(--color-sky);
+  color: var(--color-dark);
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.25) !important;
+}
+
+.card-header {
+  border-bottom: none;
+  background: linear-gradient(45deg, var(--color-navy), var(--color-steel)) !important;
+  color: var(--color-light);
+}
+
+.card-title {
+  line-height: 1.4;
+  margin-bottom: 0.75rem;
+  color: var(--color-dark);
+}
+
+.card-text {
+  line-height: 1.6;
+  font-size: 0.95rem;
+  color: var(--color-dark);
+}
+
+.card-footer {
+  background: var(--color-light);
+  color: var(--color-dark);
+}
+
+/* Loading spinner */
+.spinner-border {
+  width: 3rem;
+  height: 3rem;
+  color: var(--color-light);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .container {
+    padding: 0 15px;
+  }
+  
+  header h1 {
+    font-size: 2rem;
+  }
+  
+  .card {
+    margin-bottom: 1rem;
+  }
+}
+
+/* Error alert styling */
+.alert-danger {
+  border-radius: 15px;
+  border: none;
+  background: var(--color-steel);
+  color: white;
+  box-shadow: 0 5px 15px rgba(2, 16, 36, 0.4);
+}
+
+/* Posts container con animación */
+.posts-container {
+  animation: fadeIn 0.5s ease-in;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Botones adaptados */
+.btn-primary {
+  background-color: var(--color-steel);
+  border-color: var(--color-steel);
+}
+
+.btn-primary:hover {
+  background-color: var(--color-navy);
+  border-color: var(--color-navy);
+}
+
+.btn-outline-danger {
+  border-color: var(--color-light);
+  color: var(--color-light);
+}
+
+.btn-outline-danger:hover {
+  background-color: var(--color-dark);
+  border-color: var(--color-dark);
+  color: var(--color-light);
+}
+
+/* Placeholders Bootstrap */
+.placeholder {
+  background-color: var(--color-light) !important;
+  opacity: 0.7;
+}
